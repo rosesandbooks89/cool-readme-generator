@@ -2,52 +2,52 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 
+const generateReadMe = ({
+    projectTitle, 
+    description, 
+    installation, 
+    usage, 
+    license, 
+    contribution, 
+    tests,
+    username, 
+    email
+}) =>
 
-
-
-
-const generateReadMe = ({ProjectTitle, Description, Installation, Usage, License, Contribution, Test, username, profile}) =>
-`# ${ProjectTitle}
+`# **${projectTitle}**
 
 //table of contents with links
-## Table of Contents
--[description](Description)
--[installation](Installation)
--[usage](Usage)
--[license](Licenses)
--[contribution](Contribution)
--[test](Test)
+## **Table of Contents**
+* [Description](Description)
+* [Installation](Installation)
+* [Usage](Usage)
+* [License](Licenses)
+* [Contribution](Contribution)
+* [Test](Tests)
+* [Questions](Questions)
 
 
 ## Description
-${Description}
+${description}
 
 ## Installation
-${Installation}
+${installation}
 
 ## Usage
-${Usage}
+${usage}
 
 ## Licenses
-${License}
+${license}
 
 ## Contribution
-${Contribution}
+${contribution}
 
-## Test
-${Test}
+## Tests
+${tests}
 
 ## Questions?
-'github.com/'+ ${username}
+Here is a link to my github. This site was built using [GitHub Repo](https://github.com${username}).
 If you have any questions please email me at: + ${email}.
-
-
-
-
-
-
-
-
 `
 // TODO: Create an array of questions for user input
 const questions = () => {
@@ -59,7 +59,7 @@ const questions = () => {
             name: 'projectTitle',
             validate: function (answer) {
                 if (answer.length < 1) {
-                    return console.log("You must choose a title.");
+                    return console.log("Wait!! You must choose a title.");
                 }
                 return true;
             }
@@ -124,23 +124,11 @@ const writeToFile = () => {
         const genRead = generateReadMe(answers);
         console.log(genRead);
         fs.writeFile('README.md', genRead, (err) =>
-              err ? console.log(err) : console.log('Success!'))
+              err ? console.log(err) : console.log('Thank you for answering the questins. Your README.md file has been generated!'))
     });
     }    
 
-
-
 writeToFile();
-
-// TODO: Create a function to initialize app
-const init = () =>{
-    
-
-}
-
-// Function call to initialize app
-init();
-
 
 //add badges to license
 
