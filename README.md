@@ -1,6 +1,6 @@
-# **Awesome README Maker!**
+# **Cool README Generator!**
 
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 ## **Table of Contents**
@@ -15,26 +15,26 @@
 
 
 ## Description
-This is cool app that builds a README with the answers you provide to the following Questions. 
+This is a cool app that builds a README whith the answers your provide to the following questions.
 
 ## Installation
- Open a terminal window, type in "node index" and answer the questions. Once done the application will generate the README.md file.
+npm install
 
 ## Usage
-
+Open a terminal window, type in "node index.js" and answer the question prompt. Once done the application will generate the README.md file.
 
 ## License
 
-Awesome README Maker! is licensed under the Apache License.
+Cool README Generator! is licensed under the MIT License.
 
 
 ## Contribution
 None at this time. 
 
 ## Tests
-No tests
+No Written Tests. 
 
 ## Questions?
-Here is a link to my github. [GitHub Repo](https://github.com/rosesandbooks89).
+Here is a link to my [GitHub Repo](https://github.com/rosesandbooks89).
 
 If you have any questions please email me at: rosesandbooks89@gmail.com.

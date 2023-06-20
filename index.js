@@ -63,7 +63,7 @@ ${contribution}
 ${tests}
 
 ## Questions?
-Here is a link to my github. [GitHub Repo](https://github.com/${username}).
+Here is a link to my [GitHub Repo](https://github.com/${username}).
 
 If you have any questions please email me at: ${email}.
 `;
@@ -94,7 +94,7 @@ const questions = () => {
     },
     {
       type: "input",
-      message: "What are the steps required to install your project?",
+      message: "What command should be run to install dependencies?",
       name: "installation",
     },
     {
