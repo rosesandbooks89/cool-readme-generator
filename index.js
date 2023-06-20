@@ -143,7 +143,7 @@ const writeToFile = () => {
   questions().then((answers) => {
     const genRead = generateReadMe(answers);
     console.log(genRead);
-    fs.writeFile("README.md", genRead, (err) =>
+    fs.writeFile("./output/README.md", genRead, (err) =>
       err
         ? console.log(err)
         : console.log(
